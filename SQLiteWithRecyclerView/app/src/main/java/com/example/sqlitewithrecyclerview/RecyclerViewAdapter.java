@@ -52,17 +52,20 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             par1 = itemView.findViewById(R.id.par1);
             par2 = itemView.findViewById(R.id.par2);
             //to set a click listener on individual item view.
-            /*par2.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-
-                }
-            });*/
+            par1.setOnClickListener(this);
         }
         //when you clicked on a card
         @Override
         public void onClick(View v) {
             int position = getAdapterPosition();
+            switch(v.getId()){
+                case R.id.par1:
+                //whatever you want to do man!
+                break;
+                case R.id.par2:
+                //whatever you want to do man!
+                break;
+            }
         }
     }
 }
